@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Основано на материалах блога DTI Algorithmic за последний год" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Получите ответ на главный вопрос вашей жизни">
+    <meta property="og:description" content="Основано на материалах блога DTI Algorithmic за последний год">
+    <title>Получите ответ на главный вопрос вашей жизни</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="    margin-bottom: 15px;
+    margin-top: 15px;">
+            <a class="navbar-brand" href="/">
+                <div class="logo"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://blog.dti.team">Почитать</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.dti.team/category/playlist/">Послушать</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.dti.team/digest-landing/">Дайджест</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.dti.team/universe/">Вселенная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.dti.team/category/media_dti/#">Телерадиовещаем</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://blog.dti.team/about/">О компании</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <img class="bg" src="i/fon1.jpg">
+        <div class="modal modal1" id="modal-main" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Получите ответ на главный вопрос вашей жизни</h3>
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    </div>
+                    <div class="modal-body">
+                        <p>Основано на материалах блога DTI Algorithmic за последний год</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary custom-btn first" data-dismiss="modal" data-toggle="modal" data-target="#modal-question">Получить ответ на главный вопрос</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal2" id="modal-question" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Задать вопрос</h3>
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    </div>
+                    <div class="modal-body">
+                        <input id="question" placeholder="Например, зачем мы живем?" class="form-control" rows="1" cols="45" maxlength="45">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary custom-btn" onclick="showAnswer()">Получить ответ</button>
+                    </div>
+                    <div id="answer-bg">
+                        <div id="answer">
+                        </div>
+                        <div id="social">
+                            <a href="go.php?go=vk" id="vk" target="_blank"><i class="fab fa-vk"></i></a> | <a href="go.php?go=facebook" id="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a> | <a href="go.php?go=twitter" id="twitter" target="_blank"><i class="fab fa-twitter"></i></a> | <a href="go.php?go=telegram" id="telegram" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="socials-footer">
+                        <p class="read"><a href="../universe">Читайте нас, где вам удобно</a></p>
+                        <div class="footer-block"><a href="https://t-do.ru/dtiAlgo" target="_blank"><img alt="telegram" src="https://blog.dti.team/wp-content/uploads/icons/telegram.svg"></a></div>
+                        <div class="footer-block"> <a href="https://www.facebook.com/dtiAlgo/" target="_blank"><img alt="facebook" src="https://blog.dti.team/wp-content/uploads/icons/facebook.png"></a> </div>
+                        <div class="footer-block"><a href="https://twitter.com/dtiAlgo" target="_blank"><img alt="twitter" src="https://blog.dti.team/wp-content/uploads/icons/twitter.png"></a></div>
+                        <div class="footer-block"><a href="https://www.youtube.com/c/dtialgorithmic" target="_blank"><img alt="youtube" src="https://blog.dti.team/wp-content/uploads/icons/youtube.png"></a></div>
+                        <div class="footer-block"><a href="https://www.linkedin.com/company/dti-algo" target="_blank"><img alt="linkedin" src="https://blog.dti.team/wp-content/uploads/icons/linkedin.png"></a></div>
+                        <div class="footer-block"><a href="https://medium.com/vision-dti" target="_blank"><img alt="medium" src="https://blog.dti.team/wp-content/uploads/icons/medium.svg"></a></div>
+                        <div class="footer-block"><a href="https://clck.ru/Fe6zq" target="_blank"><img alt="yandexzen" src="https://blog.dti.team/wp-content/uploads/icons/Yandex_Zen_Logo.png"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="dti-column">
+                        <p>2010–2019&nbsp;©</p>
+                        <p>DTI Algorithmic </p>
+                    </div>
+                    <div class="dti-column">
+                        <p><a class="underline" href="mailto:blog@dti.team">blog@dti.team</a></p>
+                    </div>
+                    <div class="dti-column">
+                        <p><a class="underline" href="/politika-konfidencialnosti-dti/">Политика конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/q.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
